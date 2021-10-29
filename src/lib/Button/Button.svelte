@@ -1,15 +1,16 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
 
+	export let disabled: boolean = false;
+
 	const dispatch = createEventDispatcher<{ click: string }>();
 
 	function onClick() {
-		console.log('clicked?');
-		dispatch('click', 'hello');
+		dispatch('click');
 	}
 </script>
 
-<button on:click={onClick}><slot /></button>
+<button {disabled} on:click={onClick}><slot /></button>
 
 <style>
 	button {

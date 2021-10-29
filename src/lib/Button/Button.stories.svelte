@@ -7,7 +7,7 @@
 <Meta title="Components/Button" component={Button} />
 
 <Template id="test" let:args>
-	<Button on:click={args.onClick}>Test</Button>
+	<Button {...args}>Test</Button>
 </Template>
 
 <Template id="hello" let:args>
@@ -16,7 +16,7 @@
 
 <Story
 	name="Primary"
-  template="test"
+	template="test"
 	args={{
 		onClick: action('clicked')
 	}}
@@ -24,8 +24,17 @@
 
 <Story
 	name="Second"
-  template="hello"
+	template="hello"
 	args={{
+		onClick: action('clicked')
+	}}
+/>
+
+<Story
+	name="Disabled"
+	template="test"
+	args={{
+		disabled: true,
 		onClick: action('clicked')
 	}}
 />
