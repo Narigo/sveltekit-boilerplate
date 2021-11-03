@@ -7,12 +7,13 @@
 <Meta title="Components/Button" component={Button} />
 
 <Template let:args>
-	<Button {...args} on:click={args.onClick}>This is a button</Button>
+	<Button {...args} on:click={args.onClick}>Button</Button>
 </Template>
 
 <Story
 	name="Regular"
 	args={{
+		disabled: false,
 		onClick: action('clicked')
 	}}
 />
