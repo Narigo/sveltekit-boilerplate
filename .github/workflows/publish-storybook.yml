@@ -8,17 +8,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-  steps:
-    - name: Checkout 🛎️
-      uses: actions/checkout@v2.3.1
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2.3.1
 
-    - name: Building Storybook 🔧
-      run: |
-        npm ci
-        npm run storybook:build
+      - name: Building Storybook 🔧
+        run: |
+          npm ci
+          npm run storybook:build
 
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@4.1.5
-      with:
-        branch: gh-pages
-        folder: build/storybook
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages
+          folder: build/storybook
