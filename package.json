@@ -1,5 +1,5 @@
 {
-	"name": "app",
+	"name": "sveltekit-boilerplate",
 	"version": "0.0.1",
 	"scripts": {
 		"build": "svelte-kit build",
@@ -11,7 +11,7 @@
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
 		"storybook": "start-storybook -p 6006",
-		"storybook:build": "build-storybook",
+		"storybook:build": "build-storybook -o ./build/storybook",
 		"test": "jest",
 		"test:watch": "npm test -- --watch"
 	},
