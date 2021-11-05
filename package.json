@@ -11,7 +11,7 @@
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
 		"storybook": "start-storybook -p 6006",
-		"storybook:build": "build-storybook -o ./build/storybook",
+		"storybook:build": "build-storybook -o ./build/storybook -s ./static",
 		"test": "jest",
 		"test:watch": "npm test -- --watch"
 	},
