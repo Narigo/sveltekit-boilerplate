@@ -15,6 +15,10 @@ jobs:
           npm ci
           npm run check
 
+      - name: Run linter 🕵️
+        run: |
+          npm run lint
+
       - name: Run tests 🧪
         run: |
           npm run test -- --coverage
