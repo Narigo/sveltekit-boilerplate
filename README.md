@@ -38,3 +38,19 @@ To watch changes and run tests:
 ```
 npm run test:watch
 ```
+
+## Running checks
+
+GitHub actions will run various checks on pull requests. The checks are svelte-check, prettier and eslint. They can be run locally by using the two appropriate scripts.
+
+Svelte-check can be run with:
+
+```
+npm run check
+```
+
+To run the linter and format checker:
+
+```
+npm run lint
+```
