@@ -2,7 +2,9 @@
 	"name": "sveltekit-boilerplate",
 	"version": "0.0.1",
 	"scripts": {
-		"build": "svelte-kit build",
+		"build": "npm run build:svelte-kit && npm run build:storybook",
+		"build:svelte-kit": "svelte-kit build",
+		"build:storybook": "build-storybook -o ./build/storybook",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"dev": "svelte-kit dev",
@@ -11,7 +13,6 @@
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
 		"storybook": "start-storybook -p 6006",
-		"storybook:build": "build-storybook -o ./build/storybook -s ./static",
 		"test": "jest",
 		"test:watch": "npm test -- --watch"
 	},
