@@ -11,6 +11,7 @@ module.exports = {
 		const path = require('path');
 
 		config.resolve.alias = [{ find: '$lib', replacement: path.resolve('./src/lib') }];
+		config.base = '/storybook/';
 
 		return config;
 	}

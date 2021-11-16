@@ -4,7 +4,7 @@
 	"scripts": {
 		"build": "npm run build:svelte-kit && npm run build:storybook",
 		"build:svelte-kit": "svelte-kit build",
-		"build:storybook": "build-storybook -o ./build/storybook",
+		"build:storybook": "build-storybook -o ./build/storybook -s static",
 		"clean": "npm run clean:build",
 		"clean:build": "rm -rf ./build",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
