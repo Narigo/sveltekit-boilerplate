@@ -8,7 +8,10 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapterStatic(),
+		// adapter: adapterStatic(),
+		adapter: adapterStatic({
+			fallback: 'index.html'
+		}),
 
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte'
