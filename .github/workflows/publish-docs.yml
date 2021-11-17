@@ -1,4 +1,4 @@
-name: Deploy Storybook to GitHub pages
+name: Deploy app and storybook to GitHub pages
 
 on:
   push:
@@ -12,13 +12,13 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
 
-      - name: Building Storybook 🔧
+      - name: Building page and storybook 🔧
         run: |
           npm ci
-          npm run storybook:build
+          npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           branch: gh-pages
-          folder: build/storybook
+          folder: build/
