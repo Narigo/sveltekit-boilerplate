@@ -1,0 +1,32 @@
+version: '3.8'
+
+volumes:
+  node-cache:
+  npm-cache:
+
+services:
+  app:
+    image: node:16
+    working_dir: /app
+    ports:
+      - '3000:3000'
+      - '3001:3001'
+      - '6006:6006'
+    volumes:
+      - .:/app
+      - node-cache:/root/.cache
+      - npm-cache:/root/.npm
+
+  # Cypress container
+  cypress:
+    # the Docker image to use from https://github.com/cypress-io/cypress-docker-images
+    image: 'cypress/included:9.0.0'
+    depends_on:
+      - app
+    environment:
+      # pass base url to test pointing at the web application
+      - CYPRESS_baseUrl=http://app:3000
+    # share the current folder as volume to avoid copying
+    working_dir: /e2e
+    volumes:
+      - ./:/e2e
