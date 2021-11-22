@@ -1,5 +1,4 @@
 {
-	"baseUrl": "http://app:3000/",
 	"pluginsFile": false,
 	"fixturesFolder": false
 }

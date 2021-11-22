@@ -10,6 +10,9 @@ version: '3.8'
 #   docker-compose -f docker-compose.yml -f cy-open.yml up --exit-code-from cypress
 #
 services:
+  app:
+    command: npm run dev -- --host
+
   cypress:
     # pass custom command to start Cypress otherwise it will use the entrypoint
     # specified in the Cypress Docker image.

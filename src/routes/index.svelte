@@ -1,4 +1,4 @@
-<h1>Welcome to SvelteKit</h1>
+<h1>SvelteKit boilerplate</h1>
 <p>Check <a href="/storybook/" rel="external">Storybook</a> components.</p>
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 <p>
