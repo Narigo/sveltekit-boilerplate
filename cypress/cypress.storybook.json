@@ -1,0 +1,6 @@
+{
+	"integrationFolder": "src/lib",
+	"pluginsFile": false,
+	"fixturesFolder": false,
+	"testFiles": ["**/*.integration.ts"]
+}
