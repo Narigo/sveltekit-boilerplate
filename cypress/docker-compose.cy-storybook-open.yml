@@ -2,15 +2,10 @@ version: '3.8'
 
 services:
   app:
-    command: npm run dev:server -- --host
-
-  cypress:
     image: 'cypress/included:9.1.0'
-    depends_on:
-      - app
     entrypoint: npm run test:watch:storybook
     environment:
-      - CYPRESS_baseUrl=http://host.docker.internal:3000
+      - CYPRESS_baseUrl=http://host.docker.internal:6006
       - DISPLAY
     working_dir: /e2e
     volumes:
