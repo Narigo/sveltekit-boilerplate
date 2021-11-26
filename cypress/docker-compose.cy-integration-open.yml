@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    image: 'cypress/included:9.1.0'
+    entrypoint: npm run test:watch:integration
+    environment:
+      - CYPRESS_baseUrl=http://localhost:3000
+      - DISPLAY
+    working_dir: /app
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./:/app

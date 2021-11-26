@@ -27,7 +27,7 @@
 		"test:integration": "cypress run --headless -C cypress/cypress.json",
 		"test:storybook": "cypress run --headless -C cypress/cypress.storybook.json",
 		"test:unit": "jest src/",
-		"test:watch:integration": "start-server-and-test dev:server http://host.docker.internal:3000 dev:cypress:integration",
+		"test:watch:integration": "start-server-and-test dev:server http://localhost:3000 dev:cypress:integration",
 		"test:watch:storybook": "start-server-and-test dev:storybook http://host.docker.internal:6006 dev:cypress:storybook",
 		"test:watch:unit": "npm run test:unit -- --watch"
 	},
