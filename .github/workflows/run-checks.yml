@@ -21,9 +21,9 @@ jobs:
         run: |
           npm run lint
 
-      - name: Run tests 🧪
+      - name: Run unit tests 🧪
         run: |
-          npm run test -- --coverage
+          npm run test:unit -- --coverage
 
   integration:
     runs-on: ubuntu-latest
