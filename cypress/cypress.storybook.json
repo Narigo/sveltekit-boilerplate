@@ -1,5 +1,5 @@
 {
-	"defaultCommandTimeout": 30000,
+	"defaultCommandTimeout": 60000,
 	"integrationFolder": "src/lib",
 	"pluginsFile": false,
 	"fixturesFolder": false,
