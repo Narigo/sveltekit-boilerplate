@@ -7,7 +7,7 @@ services:
     environment:
       - CYPRESS_baseUrl=http://host.docker.internal:6006
       - DISPLAY
-    working_dir: /e2e
+    working_dir: /app
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
-      - ./:/e2e
+      - ./:/app

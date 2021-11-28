@@ -1,4 +1,6 @@
 {
+	"integrationFolder": "cypress/integration",
 	"pluginsFile": false,
-	"fixturesFolder": false
+	"fixturesFolder": false,
+	"testFiles": ["**/*.spec.ts"]
 }
