@@ -35,9 +35,13 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           command: npm run ci:test:integration
+        env:
+          CYPRESS_baseUrl: http://localhost:3000
 
       - name: Run component tests 🏠
         uses: cypress-io/github-action@v2
         with:
           install: false
           command: npm run ci:test:storybook
+        env:
+          CYPRESS_baseUrl: http://localhost:6006
