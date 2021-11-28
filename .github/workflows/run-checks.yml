@@ -34,10 +34,10 @@ jobs:
       - name: Run cypress integration tests 🏘
         uses: cypress-io/github-action@v2
         with:
-          install: false
           command: npm run ci:test:integration
 
       - name: Run component tests 🏠
         uses: cypress-io/github-action@v2
         with:
+          install: false
           command: npm run ci:test:storybook
