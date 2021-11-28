@@ -10,8 +10,8 @@ describe('Button', () => {
 	it('can be clicked', () => {
 		cy.visit('/');
 
-		cy.get('#components--button').click();
-		getIframeBody().should('contain.text', 'Lorem ipsum');
-		cy.find('button').contains('Button');
+		cy.get('#components-button--regular').click();
+		getIframeBody();
+		cy.get('button').contains('Button');
 	});
 });
