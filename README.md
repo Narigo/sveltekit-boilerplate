@@ -5,7 +5,8 @@ This boilerplate features:
 - Svelte
 - Storybook
 - TypeScript
-- Jest tests (with testing-library).
+- Jest tests (with testing-library)
+- Cypress tests (integration and Storybook components).
 
 ## Storybook
 
