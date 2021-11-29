@@ -1,7 +1,7 @@
 {
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
-		"types": ["cypress"]
+		"types": ["cypress", "svelte"]
 	},
 	"include": ["src/**/*.integration.ts"]
 }
