@@ -1,6 +1,7 @@
 /**
  * @jest-environment jsdom
  */
+/// <reference types="jest" />
 import ButtonTest from './ButtonTest.svelte';
 import { render } from '@testing-library/svelte';
 
