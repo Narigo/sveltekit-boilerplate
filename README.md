@@ -56,7 +56,7 @@ npm run lint
 
 There are two commands. One for running the tests once and one that runs all tests while watching for changes.
 
-To run a single test:
+To do a single test run:
 
 ```
 npm run test
@@ -69,3 +69,29 @@ npm run test:watch
 ```
 
 ### Running browser tests (Cypress)
+
+On a Mac with Docker: Install XQuartz and run one of the following commands.
+
+A single run of all tests of the storybook components:
+
+```
+./cy-storybook-run.sh
+```
+
+Run all tests of the storybook components:
+
+```
+./cy-storybook-open.sh
+```
+
+A single run of all end-to-end/integration tests:
+
+```
+./cy-integration-run.sh
+```
+
+Run all end-to-end/integration tests:
+
+```
+./cy-integration-open.sh
+```
