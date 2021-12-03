@@ -14,17 +14,29 @@ This boilerplate features:
 
 ## Development workflows
 
-There are two ways how to work with this boilerplate. Either use Docker for everything or use `npm` to run the scripts directly.
+After cloning the repository, you can either run `npm` commands directly or use a Docker container to run the commands in it. Docker can be used to create a more reproducible environment, but it's really optional. The accompanied `docker-compose.yml` file can be used to start a bash in a container.
 
-## Storybook
+The optional command to run the everything in a container would be:
 
-To check Storybook for building components:
+```
+docker-compose run --service-ports app bash
+```
+
+First of all, install the necessary dependencies:
+
+```
+npm ci
+```
+
+### Storybook
+
+To build components in isolation, Storybook in development mode can be started through:
 
 ```
 npm run storybook
 ```
 
-## Component library
+### Component library
 
 Building a component library with this boilerplate can be build by running:
 
@@ -32,7 +44,7 @@ Building a component library with this boilerplate can be build by running:
 npm run package
 ```
 
-## Code checks
+### Code checks
 
 This boilerplate features linter checks, automatic formatting, unit and integration tests. All of this will be checked when a pull-request is merged.
 
