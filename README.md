@@ -123,3 +123,11 @@ npm run test:watch:integration
 # or when using Mac OS, Docker and XQuartz:
 ./cy-integration-open.sh
 ```
+
+There is another special command to run all test commands sequentially:
+
+```
+npm run ci:test
+```
+
+With this command, it runs all checks, unit tests, integration and component tests.
