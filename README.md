@@ -130,4 +130,4 @@ There is another special command to run all test commands sequentially:
 npm run ci:test
 ```
 
-With this command, it runs all checks, unit tests, integration and component tests.
+With this command, it runs all checks, unit tests, integration and component tests. To be able to run this command in MacOS docker environment, use `./cy-all.sh` to enter a bash inside of a container that allows running the cypress tests.
