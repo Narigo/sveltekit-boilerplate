@@ -1,6 +1,6 @@
 {
 	"baseUrl": "http://localhost:6006",
-	"defaultCommandTimeout": 60000,
+	"defaultCommandTimeout": 120000,
 	"integrationFolder": "src/lib",
 	"pluginsFile": false,
 	"fixturesFolder": false,
