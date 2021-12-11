@@ -86,42 +86,30 @@ The following commands allow running and seeing integration tests with Cypress.
 
 > **Note:** If you're using the Docker approach: Cypress can't open a browser from within the container. Instead, a browser in the container is necessary and it needs to run in there. With the `DISPLAY` variable set, it's possible to forward the browser windows to another machine (the host machine).
 
-> **Note for MacOS users:** This boilerplate features some helpers for MacOSX, if you're running through Docker. It needs XQuartz installed on the host machine and the helper scripts can be used to run it.
+> **Note for MacOS users:** This boilerplate features some helpers for MacOSX, if you're running through Docker. It needs XQuartz installed on the host machine and the helper scripts can be used to run it. Use `./cy-all.sh` to get a shell inside a Docker container that can run the following commands.
 
 A single run of all tests of the storybook components:
 
 ```
 npm run ci:test:storybook
-
-# or when using Mac OS, Docker and XQuartz:
-./cy-storybook-run.sh
 ```
 
 Run all tests of the storybook components:
 
 ```
 npm run test:watch:storybook
-
-# or when using Mac OS, Docker and XQuartz:
-./cy-storybook-open.sh
 ```
 
 A single run of all end-to-end/integration tests:
 
 ```
 npm run ci:test:integration
-
-# or when using Mac OS, Docker and XQuartz:
-./cy-integration-run.sh
 ```
 
 Run all end-to-end/integration tests:
 
 ```
 npm run test:watch:integration
-
-# or when using Mac OS, Docker and XQuartz:
-./cy-integration-open.sh
 ```
 
 There is another special command to run all test commands sequentially:
@@ -129,5 +117,3 @@ There is another special command to run all test commands sequentially:
 ```
 npm run ci:test
 ```
-
-With this command, it runs all checks, unit tests, integration and component tests. To be able to run this command in MacOS docker environment, use `./cy-all.sh` to enter a bash inside of a container that allows running the cypress tests.
