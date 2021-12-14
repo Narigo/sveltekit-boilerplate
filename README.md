@@ -94,7 +94,7 @@ A single run of all tests of the storybook components:
 npm run ci:test:storybook
 ```
 
-Run all tests of the storybook components:
+Start the server and open cypress with all tests of the storybook components:
 
 ```
 npm run test:watch:storybook
@@ -106,14 +106,16 @@ A single run of all end-to-end/integration tests:
 npm run ci:test:integration
 ```
 
-Run all end-to-end/integration tests:
+Start the server and open cypress with all end-to-end/integration tests:
 
 ```
 npm run test:watch:integration
 ```
 
-There is another special command to run all test commands sequentially:
+There is another special command to run all test commands once sequentially:
 
 ```
 npm run ci:test
 ```
+
+The last command can be used to run all the test suites manually before pushing it and letting the CI check the various tests.
