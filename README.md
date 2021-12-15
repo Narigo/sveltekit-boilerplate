@@ -118,4 +118,4 @@ There is another special command to run all test commands once sequentially:
 npm run ci:test
 ```
 
-The last command can be used to run all the test suites manually before pushing it and letting the CI check the various tests.
+The last command can be used to run all the test suites manually before pushing it and letting the CI check all tests automatically.
