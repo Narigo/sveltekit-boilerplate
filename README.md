@@ -12,7 +12,15 @@ This boilerplate features:
 - CI tests for pull requests (GitHub actions)
 - auto-deployment for static pages and Storybook (on GitHub pages)
 
-## Development workflows
+## Git workflow
+
+1. Clone or fork the repository
+2. Manage access and disallow push to main (allow only pull requests)
+3. Create a branch with your feature
+4. Create a pull request for your feature and let the CI check whether everything still works
+5. Merge if checks are green 🙂
+
+## Development
 
 After cloning the repository, you can either run `npm` commands directly or use a Docker container to run the commands in it. Docker can be used to create a more reproducible environment, but it's really optional. The accompanied `docker-compose.yml` file can be used to start a bash in a container.
 
