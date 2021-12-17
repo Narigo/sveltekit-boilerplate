@@ -2,13 +2,13 @@
 
 This boilerplate features:
 
-- Svelte
-- component based development (Storybook)
-- type-safety (TypeScript)
-- auto-formatting (prettier)
-- code-linting (eslint)
-- unit and component tests (Jest with testing-library)
-- browser tests (Cypress for Storybook and integration).
+- [SvelteKit](https://kit.svelte.dev/)
+- component based development ([Storybook](https://storybook.js.org/))
+- type-safety ([TypeScript](https://www.typescriptlang.org/))
+- auto-formatting ([prettier](https://prettier.io/))
+- code-linting ([eslint](https://eslint.org/))
+- unit and component tests ([Jest](https://jestjs.io/) with [testing-library](https://testing-library.com/))
+- browser tests ([Cypress](https://www.cypress.io/) for Storybook and integration).
 - CI tests for pull requests (GitHub actions)
 - auto-deployment for static pages and Storybook (on GitHub pages)
 
