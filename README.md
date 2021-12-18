@@ -6,9 +6,9 @@ This boilerplate features:
 - component based development ([Storybook](https://storybook.js.org/))
 - type-safety ([TypeScript](https://www.typescriptlang.org/))
 - auto-formatting ([prettier](https://prettier.io/))
-- code-linting ([eslint](https://eslint.org/))
-- unit and component tests ([Jest](https://jestjs.io/) with [testing-library](https://testing-library.com/))
-- browser tests ([Cypress](https://www.cypress.io/) for Storybook and integration).
+- [code-linting](#running-checks) ([eslint](https://eslint.org/))
+- [unit and component tests](#running-unit-tests-jest) ([Jest](https://jestjs.io/) with [testing-library](https://testing-library.com/))
+- [browser tests](#running-browser-tests-cypress) ([Cypress](https://www.cypress.io/) for Storybook and integration).
 - CI tests for pull requests (GitHub actions)
 - auto-deployment for static pages and Storybook (on GitHub pages)
 
