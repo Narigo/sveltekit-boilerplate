@@ -9,8 +9,8 @@ This boilerplate features:
 - [code-linting](#running-checks) ([eslint](https://eslint.org/))
 - [unit and component tests](#running-unit-tests-jest) ([Jest](https://jestjs.io/) with [testing-library](https://testing-library.com/))
 - [browser tests](#running-browser-tests-cypress) ([Cypress](https://www.cypress.io/) for Storybook and integration).
-- CI tests for pull requests (GitHub actions)
-- auto-deployment for static pages and Storybook (on GitHub pages)
+- [CI tests for pull requests](.github/workflows/run-checks.yml) (GitHub actions)
+- [auto-deployment for static pages and Storybook](.github/workflows/publish-docs.yml) (on GitHub pages)
 
 ## Git workflow
 
