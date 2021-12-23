@@ -11,7 +11,7 @@ test.describe('Button', () => {
 		const button = page.locator('#root > button');
 		await button.waitFor();
 		await expect(button).toHaveText('Button');
-		page.click('button');
+		await button.click();
 		await expect(true).toBe(true);
 	});
 });
