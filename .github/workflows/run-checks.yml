@@ -128,7 +128,7 @@ jobs:
 
       - name: Run integration tests 🏘
         run: |
-          npm run ci:test:app
+          npm run ci:test:integration
 
   integration-storybook:
     runs-on: ubuntu-latest
