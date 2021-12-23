@@ -1,10 +1,14 @@
 /// <reference types="cypress" />
 
-export {};
+import { expect, test } from '@playwright/test';
 
-describe('Button', () => {
-	it('can be clicked', () => {
-		cy.visit('/iframe.html?id=components-button--regular');
-		cy.get('button').contains('Button').click();
+test.describe('Button', () => {
+	test('can be clicked', async ({ page }) => {
+		await page.goto('http://localhost:6006/iframe.html?id=components-button--regular&viewMode=story', { waitUntil: 'networkidle' });
+		const button = page.locator('#root > button')
+		await button.waitFor();
+		await expect(button).toHaveText('Button');
+		await page.click('button');
+		await expect(true).toBe(true);
 	});
 });
