@@ -88,13 +88,13 @@ To watch changes and run tests:
 npm run test:watch
 ```
 
-### Running browser tests (Cypress)
+### Running browser tests (Playwright)
 
-The following commands allow running and seeing integration tests with Cypress.
+The following commands allow running and seeing integration tests with Playwright.
 
-> **Note:** If you're using the Docker approach: Cypress can't open a browser from within the container. Instead, a browser in the container is necessary and it needs to run in there. With the `DISPLAY` variable set, it's possible to forward the browser windows to another machine (the host machine).
+> **Note:** If you're using the Docker approach: Playwright can't open a browser from within the container. Instead, a browser in the container is necessary and it needs to run in there. With the `DISPLAY` variable set, it's possible to forward the browser windows to another machine (the host machine).
 
-> **Note for MacOS users:** This boilerplate features some helpers for MacOSX, if you're running through Docker. It needs XQuartz installed on the host machine and the helper scripts can be used to run it. Use `./cy-all.sh` to get a shell inside a Docker container that can run the following commands.
+> **Note for MacOS users:** This boilerplate features some helpers for MacOSX, if you're running through Docker. It needs XQuartz installed on the host machine and the helper scripts can be used to run it. Use `./playwright.sh` to get a shell inside a Docker container that can run the following commands.
 
 A single run of all tests of the storybook components:
 
@@ -102,7 +102,7 @@ A single run of all tests of the storybook components:
 npm run ci:test:storybook
 ```
 
-Start the server and open cypress with all tests of the storybook components:
+Start the server and open Playwright in debug mode to check the tests for the storybook components:
 
 ```
 npm run test:watch:storybook
@@ -114,7 +114,7 @@ A single run of all end-to-end/integration tests:
 npm run ci:test:integration
 ```
 
-Start the server and open cypress with all end-to-end/integration tests:
+Start the server and open Playwright with all end-to-end/integration tests in debug mode:
 
 ```
 npm run test:watch:integration
