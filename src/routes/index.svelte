@@ -1,5 +1,5 @@
 <script lang="ts">
-	const repoUrl = 'https://github.com/Narigo/sveltekit-boilerplate';
+	const repoUrl = 'https://github.com/Narigo/sveltekit-boilerplate/blob/main';
 </script>
 
 <h1>SvelteKit boilerplate</h1>
