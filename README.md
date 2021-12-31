@@ -15,10 +15,11 @@ This boilerplate features:
 ## Git workflow
 
 1. Clone or fork the repository
-2. Manage access and disallow push to main (allow only pull requests)
-3. Create a branch with your feature
-4. Create a pull request for your feature and let the CI check whether everything still works
-5. Merge if checks are green 🙂
+2. Change `./static/CNAME` to your domain or remove it
+3. Manage access and disallow push to main (allow only pull requests)
+4. Create a branch with your feature
+5. Create a pull request for your feature and let the CI check whether everything still works
+6. Merge if checks are green 🙂
 
 ## Development
 
