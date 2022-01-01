@@ -8,19 +8,18 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-dd5b5ebe.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-89cc92cc.js">
-		<link rel="modulepreload" href="/_app/layout.svelte-eaee886a.js">
-		<link rel="modulepreload" href="/_app/pages/index.svelte-0c3437a7.js">
 		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="modulepreload" href="/_app/start-c1e6f11b.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-a7db36b2.js">
+		<link rel="modulepreload" href="/_app/layout.svelte-8957ef27.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-98fc9833.js">
 
 		<script type="module">
-			import { start } from "/_app/start-dd5b5ebe.js";
+			import { start } from "/_app/start-c1e6f11b.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
 				session: {},
-				host: location.host,
 				route: true,
 				spa: false,
 				trailing_slash: "never",
@@ -28,17 +27,17 @@
 					status: 200,
 					error: null,
 					nodes: [
-						import("/_app/layout.svelte-eaee886a.js"),
-						import("/_app/pages/index.svelte-0c3437a7.js")
+						import("/_app/layout.svelte-8957ef27.js"),
+						import("/_app/pages/index.svelte-98fc9833.js")
 					],
-					page: {
-						host: location.host, // TODO this is redundant
-						path: "\u002F",
-						query: new URLSearchParams(""),
-						params: {}
-					}
+					url: new URL("sveltekit://prerender/"),
+					params: {}
 				}
 			});
+		</script><script>
+			if ('serviceWorker' in navigator) {
+				navigator.serviceWorker.register('/service-worker.js');
+			}
 		</script>
 	</head>
 	<body>
@@ -73,9 +72,6 @@
 <p>Inspect the <a href="https://github.com/Narigo/sveltekit-boilerplate" rel="external">source code of this boilerplate at GitHub</a>.
 </p>
 
-
-
-			
-		</div>
+</div>
 	</body>
 </html>
