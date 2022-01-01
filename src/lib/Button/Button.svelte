@@ -1,9 +1,9 @@
-<script lang="ts">
+<script lang="typescript">
 	import { createEventDispatcher } from 'svelte';
 
 	export let disabled = false;
 
-	const dispatch = createEventDispatcher<{ click: string }>();
+	const dispatch = createEventDispatcher();
 
 	function onClick() {
 		dispatch('click');
