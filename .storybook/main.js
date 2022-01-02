@@ -1,3 +1,5 @@
+const preprocess = require('svelte-preprocess');
+
 module.exports = {
 	stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx|svelte)'],
 	addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-svelte-csf'],
@@ -5,7 +7,7 @@ module.exports = {
 		builder: 'storybook-builder-vite'
 	},
 	svelteOptions: {
-		preprocess: import('../svelte.config.js').preprocess
+		preprocess: preprocess()
 	},
 	async viteFinal(config, { configType }) {
 		const path = require('path');

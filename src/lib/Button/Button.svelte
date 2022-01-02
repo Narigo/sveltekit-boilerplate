@@ -3,7 +3,7 @@
 
 	export let disabled = false;
 
-	const dispatch = createEventDispatcher();
+	const dispatch = createEventDispatcher<{ click: string }>();
 
 	function onClick() {
 		dispatch('click');
