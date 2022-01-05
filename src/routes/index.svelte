@@ -33,12 +33,14 @@
 	<li>
 		- <a href="{repoUrl}/.github/workflows/run-checks.yml" rel="external"
 			>CI tests for pull requests</a
-		> (GitHub actions)
+		>
+		(<a href="https://github.com/features/actions" rel="external">GitHub actions</a>)
 	</li>
 	<li>
 		- <a href="{repoUrl}/.github/workflows/publish-docs.yml" rel="external"
 			>auto-deployment for static pages and Storybook</a
-		> (on GitHub pages)
+		>
+		(on <a href="https://pages.github.com/" rel="external">GitHub pages</a>)
 	</li>
 </ul>
 <p>Check <a href="/storybook/" rel="external">Storybook</a> components.</p>
