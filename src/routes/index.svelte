@@ -1,9 +1,11 @@
 <script lang="ts">
+	import Headline from '$lib/Headline/Headline.svelte';
+
 	const gitHubUrl = 'https://github.com/Narigo/sveltekit-boilerplate';
 	const repoUrl = `${gitHubUrl}/blob/main`;
 </script>
 
-<h1>SvelteKit boilerplate</h1>
+<Headline>SvelteKit boilerplate</Headline>
 <p>This boilerplate features:</p>
 <ul>
 	<li>- <a href="https://kit.svelte.dev/" rel="external">SvelteKit</a>(https://kit.svelte.dev/)</li>
