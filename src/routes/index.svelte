@@ -8,7 +8,9 @@
 <Headline>SvelteKit boilerplate</Headline>
 <p>This boilerplate features:</p>
 <ul>
-	<li>- <a href="https://kit.svelte.dev/" rel="external">SvelteKit</a> (https://kit.svelte.dev/)</li>
+	<li>
+		- <a href="https://kit.svelte.dev/" rel="external">SvelteKit</a> (https://kit.svelte.dev/)
+	</li>
 	<li>
 		- component based development (<a href="https://storybook.js.org/" rel="external">Storybook</a>)
 	</li>
