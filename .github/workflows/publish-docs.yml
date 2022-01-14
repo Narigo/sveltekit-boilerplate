@@ -29,4 +29,4 @@ jobs:
     steps:
       - name: Notify about deployment being done
         run: |
-          curl https://narigo.napkin.io/webhook-me/notify/${{ secrets.NOTIFY_FOR_DEPLOY_DONE }}
+          curl https://narigo.npkn.net/webhook-me/notify/${{ secrets.NOTIFY_FOR_DEPLOY_DONE }}
