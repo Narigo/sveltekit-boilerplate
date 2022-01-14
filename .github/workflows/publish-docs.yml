@@ -22,3 +22,11 @@ jobs:
         with:
           branch: gh-pages
           folder: build/
+
+  notify-done:
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - name: Notify about deployment being done
+        run: |
+          curl https://narigo.napkin.io/webhook-me/notify/${{ SECRETS.NOTIFY_FOR_MERGE_DONEKEY }}
