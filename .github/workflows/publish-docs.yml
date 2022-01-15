@@ -23,10 +23,10 @@ jobs:
           branch: gh-pages
           folder: build/
 
-  notify-done:
+  notify-webhook-done:
     runs-on: ubuntu-latest
     needs: [build]
     steps:
       - name: Notify about deployment being done
         run: |
-          curl https://narigo.npkn.net/webhook-me/notify/${{ secrets.NOTIFY_FOR_DEPLOY_DONE }}
+          curl -s --fail-with-body https://narigo.npkn.net/webhook-me/notify/${{ secrets.NOTIFY_FOR_DEPLOY_DONE }} -H 'napkin-account-api-key: ${{ secrets.NOTIFY_API_KEY }}'
