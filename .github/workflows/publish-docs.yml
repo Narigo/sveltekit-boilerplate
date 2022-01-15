@@ -23,8 +23,9 @@ jobs:
           branch: gh-pages
           folder: build/
 
-  notify-webhook-done:
+  notify-webhook-done-if-set-up:
     runs-on: ubuntu-latest
+    if: ${{ secrets.NOTIFY_API_KEY != '' && secrets.NOTIFY_FOR_DEPLOY_DONE != '' }}
     needs: [build]
     steps:
       - name: Notify about deployment being done
