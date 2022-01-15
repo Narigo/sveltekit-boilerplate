@@ -25,12 +25,12 @@ jobs:
 
   notify-webhook-done-if-set-up:
     runs-on: ubuntu-latest
-    if: ${{ env.NOTIFY_API_KEY != '' && env.NOTIFY_FOR_DEPLOY_DONE != '' }}
     needs: [build]
-    steps:
-      - name: Notify about deployment being done
-        run: |
-          curl -s --fail-with-body https://narigo.npkn.net/webhook-me/notify/${{ env.NOTIFY_FOR_DEPLOY_DONE }} -H 'napkin-account-api-key: ${{ env.NOTIFY_API_KEY }}'
     env:
       NOTIFY_API_KEY: ${{ secrets.NOTIFY_API_KEY }}
       NOTIFY_FOR_DEPLOY_DONE: ${{ secrets.NOTIFY_FOR_DEPLOY_DONE }}
+    steps:
+      - name: Notify about deployment being done
+        if: ${{ env.NOTIFY_API_KEY != '' && env.NOTIFY_FOR_DEPLOY_DONE != '' }}
+        run: |
+          curl -s --fail-with-body https://narigo.npkn.net/webhook-me/notify/${{ env.NOTIFY_FOR_DEPLOY_DONE }} -H 'napkin-account-api-key: ${{ env.NOTIFY_API_KEY }}'
