@@ -33,4 +33,4 @@ jobs:
       - name: Notify about deployment being done
         if: ${{ env.NOTIFY_API_KEY != '' && env.NOTIFY_FOR_DEPLOY_DONE != '' }}
         run: |
-          curl -s --fail-with-body https://narigo.npkn.net/webhook-me/notify/${{ env.NOTIFY_FOR_DEPLOY_DONE }} -H 'napkin-account-api-key: ${{ env.NOTIFY_API_KEY }}'
+          curl -s -f https://narigo.npkn.net/webhook-me/notify/${{ env.NOTIFY_FOR_DEPLOY_DONE }} -H 'napkin-account-api-key: ${{ env.NOTIFY_API_KEY }}'
