@@ -59,7 +59,7 @@
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.6.0",
 		"start-server-and-test": "^1.14.0",
-		"storybook-builder-vite": "^0.1.14",
+		"storybook-builder-vite": "^0.1.13",
 		"svelte": "^3.46.3",
 		"svelte-check": "^2.4.1",
 		"svelte-jester": "^2.3.1",
