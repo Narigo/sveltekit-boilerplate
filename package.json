@@ -36,7 +36,7 @@
 	"svelte": "src/lib/index.ts",
 	"type": "module",
 	"devDependencies": {
-		"@playwright/test": "^1.19.0",
+		"@playwright/test": "^1.20.0",
 		"@storybook/addon-actions": "^6.4.19",
 		"@storybook/addon-essentials": "^6.4.19",
 		"@storybook/addon-links": "^6.4.19",
@@ -59,7 +59,7 @@
 		"prettier": "^2.6.0",
 		"prettier-plugin-svelte": "^2.6.0",
 		"start-server-and-test": "^1.14.0",
-		"storybook-builder-vite": "^0.1.13",
+		"storybook-builder-vite": "^0.1.20",
 		"svelte": "^3.46.4",
 		"svelte-check": "^2.4.6",
 		"svelte-jester": "^2.3.2",
