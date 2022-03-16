@@ -1,22 +1,24 @@
 <!DOCTYPE html>
+<!--suppress HtmlUnknownTarget -->
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Storybook</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script>
-            window.CONFIG_TYPE = 'PRODUCTION';
-            window.LOGLEVEL = 'info';
-            window.FRAMEWORK_OPTIONS = {"preprocess":{"defaultLanguages":{"markup":"html","style":"css","script":"javascript"}}};
-            window.CHANNEL_OPTIONS = {}
-            window.FEATURES = {"postcss":true,"emotionAlias":true,"warnOnLegacyHierarchySeparator":true};
-            window.SERVER_CHANNEL_URL = undefined
+  <head>
+    <meta charset="utf-8" />
+    <title>Storybook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      window.CONFIG_TYPE = 'PRODUCTION';
+      window.LOGLEVEL = 'info';
+      window.FRAMEWORK_OPTIONS = {"preprocess":{"defaultLanguages":{"markup":"html","style":"css","script":"javascript"}}};
+      window.CHANNEL_OPTIONS = {};
+      window.FEATURES = {"postcss":true,"emotionAlias":true,"warnOnLegacyHierarchySeparator":true};
+      window.STORIES = [{"titlePrefix":"","directory":"./src","files":"**/*.stories.mdx","importPathMatcher":"^\\.[\\\\/](?:src(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.stories\\.mdx)$"},{"titlePrefix":"","directory":"./src","files":"**/*.stories.@(js|jsx|ts|tsx|svelte)","importPathMatcher":"^\\.[\\\\/](?:src(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.stories\\.(js|jsx|ts|tsx|svelte))$"}];
+      window.SERVER_CHANNEL_URL = undefined;
 
-            // We do this so that "module && module.hot" etc. in Storybook source code
-            // doesn't fail (it will simply be disabled)
-            window.module = undefined;
-        </script>
-        <base target="_parent" />
+      // We do this so that "module && module.hot" etc. in Storybook source code
+      // doesn't fail (it will simply be disabled)
+      window.module = undefined;
+    </script>
+    <base target="_parent" />
 
 <style>
   :not(.sb-show-preparing-story) > .sb-preparing-story,
@@ -352,13 +354,13 @@
   };
 </script>
 
-        
-      <script type="module" crossorigin src="/storybook/assets/iframe.e2c17b07.js"></script>
-      <link rel="modulepreload" href="/storybook/assets/vendor.a5acc2b4.js">
-      <link rel="stylesheet" href="/storybook/assets/iframe.955f57e4.css">
-    </head>
-    <body>
-        <div class="sb-preparing-story sb-wrapper">
+    
+    <script type="module" crossorigin src="/storybook/assets/iframe.f9851893.js"></script>
+    <link rel="modulepreload" href="/storybook/assets/vendor.3ea6e7c7.js">
+    <link rel="stylesheet" href="/storybook/assets/iframe.955f57e4.css">
+  </head>
+  <body>
+    <div class="sb-preparing-story sb-wrapper">
   <div class="sb-loader"></div>
 </div>
 
@@ -446,10 +448,9 @@
   <pre class="sb-errordisplay_code"><code id="error-stack"></code></pre>
 </div>
 
-        <div id="root"></div>
-        <div id="docs-root"></div>
+    <div id="root"></div>
+    <div id="docs-root"></div>
 
-        
-        
-    </body>
+    
+  </body>
 </html>
