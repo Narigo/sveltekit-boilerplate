@@ -1,5 +1,8 @@
 version: '3.8'
 
+volumes:
+  playwright:
+
 services:
   app:
     image: 'mcr.microsoft.com/playwright:focal'
@@ -10,3 +13,4 @@ services:
     volumes:
       - /tmp/.X11-unix:/tmp/.X11-unix
       - ./:/app
+      - playwright:/ms-playwright
