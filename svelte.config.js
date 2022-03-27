@@ -10,7 +10,14 @@ const config = {
 	kit: {
 		adapter: adapterStatic(),
 		prerender: {
-			default: true
+			default: true,
+			onError: (details) => {
+				console.log('error in prerender', { details });
+				if (details.path === '/storybook') {
+					return;
+				}
+				throw details;
+			}
 		}
 	}
 };
