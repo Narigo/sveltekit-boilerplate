@@ -12,7 +12,6 @@ const config = {
 		prerender: {
 			default: true,
 			onError: (details) => {
-				console.log('error in prerender', { details });
 				if (details.path === '/storybook') {
 					return;
 				}
