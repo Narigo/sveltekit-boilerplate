@@ -4,6 +4,6 @@
 		"resolveJsonModule": true,
 		"types": ["jest", "svelte"]
 	},
-	"exclude": ["src/**/*.integration.ts", "src/**/*.spec.ts"],
+	"exclude": ["src/**/*.integration.ts", "src/**/*.spec.ts", "node_modules/**", ".svelte-kit/**"],
 	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
 }
