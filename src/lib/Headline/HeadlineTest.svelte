@@ -1,4 +1,4 @@
-<script lang="typescript">
+<script lang="ts">
 	import Headline from './Headline.svelte';
 </script>
 
